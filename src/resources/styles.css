@@ -88,7 +88,7 @@ CARROUSEL
     height: 100vh;
 }
 
-.artist-name {
+/* .artist-name {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -108,7 +108,7 @@ CARROUSEL
 	font-size: 40px;
 	padding: 21px 70px 0px 70px;
 	text-transform: uppercase;
-}
+} */
 
 /*====================
         COUNTDOWN
@@ -135,10 +135,10 @@ CARROUSEL
 }
 
 .countdown-wrapper .countdown-time {
-	font-size: 70px;
+	font-size: 50px;
 	border-right: 1px solid #f44336;
 	margin-right: 14px;
-	padding-right: 49px;
+	padding-right: 29px;
 }
 .countdown-wrapper .countdown-item:last-child .countdown-time {
 	border: none;

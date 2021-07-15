@@ -11,13 +11,17 @@ import slide4 from './../resources/images/slide-4.jpeg';
 const Carrousel = () => {
 	const settings = {
 		dots: false,
+    fade: true,
 		infinite: true,
 		autoplay: true,
-		speed: 500,
+		speed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1
 	};
-
+  
+  
 	return (
-		<div className="carrousel-wrapper">
+    <div className="carrousel-wrapper">
 			<Slider {...settings}>
 				<div>
 					<div
