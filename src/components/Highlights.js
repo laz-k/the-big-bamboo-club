@@ -1,7 +1,7 @@
 
 const Highlights = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"yellowgreen", height: "100vh"}} id="highlights">
       
     </div>
   )

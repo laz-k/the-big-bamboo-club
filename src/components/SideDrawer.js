@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, List, ListItem, makeStyles } from '@material-ui/core';
+import { Drawer, Link, List, ListItem, makeStyles } from '@material-ui/core';
 
 const SideDrawer = props => {
 
@@ -18,10 +18,11 @@ const SideDrawer = props => {
        onClose={() => props.onClose(false)}
       >
 				<List component="nav">
-					<ListItem button onClick={() => alert("click")} >The Big Bamboo</ListItem>
-					<ListItem button onClick={() => alert("click")} >Highlights</ListItem>
-					<ListItem button onClick={() => alert("click")} >Tickets</ListItem>
-					<ListItem button onClick={() => alert("click")} >Find us</ListItem>
+					<ListItem button component={Link} href="/" >Home</ListItem>
+					<ListItem button component={Link} href="#information" >Information</ListItem>
+					<ListItem button component={Link} href="#highlights" >Highlights</ListItem>
+					<ListItem button component={Link} href="#tickets" >Tickets</ListItem>
+					<ListItem button component={Link} href="#find-us" >Find us</ListItem>
 				</List>
 			</Drawer>
 	

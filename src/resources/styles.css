@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
 	padding: 0;
 	margin: 0;
-    background-color: #ffa800;
+	background-color: #ffa800;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -24,7 +25,8 @@ body, html {
 	background: #ff4800;
 }
 .bck-yellow {
-	background: #ffa800;
+	background: yellow;
+	height: 100vh;
 }
 
 .iconImage {
@@ -41,13 +43,27 @@ body, html {
         HEADER
 ======================*/
 
-
 .header-logo-bg {
 	flex-grow: 1;
 }
 .header-logo {
-    margin-left: 40px;
-	transform: scale(1.2);
+	margin-left: 40px;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+.MuiSvgIcon-root {
+	color: black;
+}
+
+.MuiIconButton-root {
+	background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+.MuiIconButton-root:hover .MuiSvgIcon-root{
+  transform: scale(1.1);
+  color: green;
 }
 
 
@@ -56,7 +72,7 @@ body, html {
 ======================*/
 
 footer {
-	padding: 30px 0px;
+	padding: 20px 0px;
 	text-align: center;
 	font-size: 30px;
 	color: #ffffff;
@@ -69,14 +85,12 @@ footer {
 	font-size: 18px;
 	font-family: 'Londrina Solid', cursive;
 	font-weight: 100;
+	margin-top: 0px !important;
 }
-
 
 /*====================
 CARROUSEL
 ======================*/
-
-
 
 .carrousel-wrapper {
 	height: 100vh;
@@ -85,30 +99,8 @@ CARROUSEL
 
 .carrousel-image {
 	background-size: cover !important;
-    height: 100vh;
+	height: 100vh;
 }
-
-/* .artist-name {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 400px;
-	height: 160px;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	border: 2px solid white;
-}
-
-.artist-name .wrapper {
-	border: 2px solid white;
-	height: 121px;
-	margin: 6px;
-	text-align: center;
-	color: #fff;
-	font-size: 40px;
-	padding: 21px 70px 0px 70px;
-	text-transform: uppercase;
-} */
 
 /*====================
         COUNTDOWN
@@ -121,33 +113,44 @@ CARROUSEL
 }
 
 .countdown-wrapper .countdown-top {
-	background: #ff4800;
-	font-size: 19px;
-	padding: 10px;
+	background: rgb(255, 217, 0);
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px 33px;
+	box-shadow: 3px 3px 4px black;
 	display: inline-block;
 	text-transform: uppercase;
 }
 
 .countdown-wrapper .countdown-bottom {
 	display: flex;
-	background: #d93d00;
 	padding: 10px 20px;
 }
 
 .countdown-wrapper .countdown-time {
 	font-size: 50px;
-	border-right: 1px solid #f44336;
-	margin-right: 14px;
-	padding-right: 29px;
-}
-.countdown-wrapper .countdown-item:last-child .countdown-time {
-	border: none;
+	border-right: 2px solid #f44336;
+	padding: 10px;
 }
 
-.countdown-wrapper .countdown-tag {
+.countdown-time {
+	text-shadow: 3px 3px 4px black;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.countdown-bottom :nth-child(4) .countdown-time,
+.countdown-bottom :nth-child(4) .countdown-tag {
+	border: none !important;
+}
+
+.countdown-tag {
 	text-transform: uppercase;
+	padding-bottom: 5px;
 	font-size: 20px;
-	padding-left: 7px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	border-right: 2px solid #f44336;
 }
 
 /*====================
