@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
@@ -14,36 +13,38 @@ const useStyles = makeStyles({
     marginRight: "auto"
   },
   media: {
-    height: 240
+    height: 240,
+    borderBottom: "2px solid black"
   },
+  content: {
+    backgroundColor: "#e7e7e7"
+  }
 });
 
 const image =
   "https://matchbin-assets.s3.amazonaws.com/public/sites/351/assets/K2WC_web_okyo_ska_paradise_orchestra_2x.jpg";
 
-export default function MediaCard({ title, date, address, address1, address2 }) {
+export default function MediaCard({ place }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root} elevation={2} >
-      <CardActionArea>
         <CardMedia className={classes.media} image={image} title="" />
-        <CardContent>
+        <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h5">
-            {title}
+            {place.city}
           </Typography>
-          <Typography gutterBottom>{date}</Typography>
+          <Typography gutterBottom>{place.date}</Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {address}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {address1}
+            {place.address1}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {address2}
+            {place.address2}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {place.tel}
           </Typography>
         </CardContent>
-      </CardActionArea>
     </Card>
   );
 }

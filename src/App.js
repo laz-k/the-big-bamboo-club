@@ -12,9 +12,8 @@ const App = () => {
     <Header/>
     <Carrousel />
     <EventDate />
-    <TourDates/>
     <Information/>
-    <div style={{backgroundColor:"green", height: "800px"}}></div>
+    <TourDates/>
     <Footer/>
   </div>
   );

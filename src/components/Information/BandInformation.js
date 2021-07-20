@@ -1,21 +1,32 @@
-// import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Typography, Box } from '@material-ui/core';
+import zIndex from '@material-ui/core/styles/zIndex';
+
+const useStyles = makeStyles({
+	text: {
+		marginBottom: "40px",
+	}
+})
+
 
 const BandInformation = () => {
+
+	const classes = useStyles()
+
 	return (
-		<Container>
+		<Container >
     <Typography variant="h2" align="center" >
     <Box pt={8} fontWeight="700">
       Tokyo Ska Paradise Orchestra
     </Box>
     </Typography>
-			<Typography variant="h2" align="center" fontWeight={500}>
-				<Box pb={2}letterSpacing={5} fontFamily="Londrina Solid">
+			<Typography variant="h4" align="center" >
+				<Box pb={2} letterSpacing={5} fontWeight={500}>
 					30 Years Anniversary Tour
 				</Box>
 			</Typography>
-			<Typography variant="body1">
+			<Typography variant="body1" className={classes.text} >
 				Based on Jamaican-born ska music, Tokyo Ska Paradise, Japan’s ska pride to the world, takes in all sorts of
 				music with unique interpretations and has established their own style of sound that they call “Tokyo Ska”.
 				<br></br> The band made their debut in 1989 with their eponymous album (so-called “the yellow vinyl”). After

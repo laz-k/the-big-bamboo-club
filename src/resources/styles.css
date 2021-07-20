@@ -77,14 +77,11 @@ footer {
 	font-size: 30px;
 	color: #ffffff;
 	background: red;
-	font-family: 'Londrina Solid', cursive;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .footer-copyright {
-	font-size: 18px;
-	font-family: 'Londrina Solid', cursive;
-	font-weight: 100;
+	font-size: 16px;
 	margin-top: 0px !important;
 }
 
@@ -153,129 +150,7 @@ CARROUSEL
 	border-right: 2px solid #f44336;
 }
 
-/*====================
-        VENUE NFO
-======================*/
 
-.vn-wrapper {
-	display: flex;
-	padding: 170px 0px;
-}
-
-.vn-item {
-	width: 50%;
-	color: #ffffff;
-	text-align: center;
-}
-
-.vn-item .vn-outer {
-	width: 300px;
-	border: 2px solid #828282;
-	margin: auto;
-	padding: 5px;
-}
-
-.vn-item .vn-inner {
-	border: 2px solid #828282;
-	position: relative;
-	padding: 0px 20px;
-	transition: all 500ms ease;
-}
-
-.vn-item .vn-inner:hover {
-	background: #3e3e3e;
-}
-
-.vn-item .vn-icon-square {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	top: -54px;
-	left: 100px;
-}
-
-.vn-item .vn-icon {
-	width: 50px;
-	height: 50px;
-	background-size: contain !important;
-	background-repeat: no-repeat !important;
-	position: absolute;
-	top: -30px;
-	left: 124px;
-}
-
-.vn-item .vn-title {
-	font-size: 28px;
-	margin: 90px 0px 20px 0px;
-	border-bottom: 1px solid #5d5d5d;
-	padding-bottom: 10px;
-}
-
-.vn-item .vn-desc {
-	font-size: 30px;
-	font-weight: 300;
-	margin-bottom: 90px;
-}
-
-/*====================
-        HIGHLIGHTS
-======================*/
-
-.highlight-wrapper h2 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #2c2c2c;
-	font-size: 52px;
-}
-
-.highlight-wrapper .highlight-description {
-	line-height: 30px;
-	font-size: 18px;
-	font-weight: 300;
-	border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
-	padding: 30px 0px;
-}
-
-.discount-wrapper {
-	display: flex;
-	padding: 70px 0px;
-}
-
-.discount-wrapper .discount-porcentage {
-	padding-right: 100px;
-}
-
-.discount-wrapper .discount-porcentage span:nth-child(1) {
-	color: #ff4800;
-	font-size: 125px;
-	font-weight: 400;
-	display: block;
-	line-height: 120px;
-}
-
-.discount-wrapper .discount-porcentage span:nth-child(2) {
-	color: #2c2c2c;
-	font-size: 50px;
-	font-weight: 400;
-	display: block;
-}
-
-.discount-wrapper .discount-description h3 {
-	font-size: 34px;
-	font-weight: 100;
-	margin: 0px;
-	color: #2c2c2c;
-}
-
-.discount-wrapper .discount-description p {
-	line-height: 30px;
-	font-size: 18px;
-	font-weight: 300;
-}
 
 /*====================
         PRICING

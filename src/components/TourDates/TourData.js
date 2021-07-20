@@ -1,5 +1,5 @@
-export const TourData = {
-	place: [
+const TourData = {
+	location: [
 		{
 			city: 'Rome - Italy',
 			date: 'Saturday, 11 November @ Casa Club ',
@@ -44,3 +44,5 @@ export const TourData = {
 		},
 	],
 };
+
+export default TourData;
