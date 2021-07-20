@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Typography, Box } from '@material-ui/core';
-import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles({
 	text: {
