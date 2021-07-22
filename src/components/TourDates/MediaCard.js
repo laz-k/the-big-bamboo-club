@@ -3,6 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import image from "./../../resources/images/slide-2.jpeg"
 
 const useStyles = makeStyles({
   root: {
@@ -21,8 +22,7 @@ const useStyles = makeStyles({
   }
 });
 
-const image =
-  "https://matchbin-assets.s3.amazonaws.com/public/sites/351/assets/K2WC_web_okyo_ska_paradise_orchestra_2x.jpg";
+
 
 export default function MediaCard({ place }) {
   const classes = useStyles();
