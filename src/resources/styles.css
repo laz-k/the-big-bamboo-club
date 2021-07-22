@@ -2,31 +2,16 @@ body,
 html {
 	padding: 0;
 	margin: 0;
-	background-color: #ffa800;
+	background-color: #FB8C00;
 	font-family: 'Roboto', sans-serif;
 }
 
 .app {
 	height: '1500px';
-	background: 'cornflowerblue';
 }
 
-.featured-container {
-	position: 'relative';
-}
-
-.bck-black {
-	background: #3c3c3c;
-}
-.bck-white {
-	background: #ffffff;
-}
-.bck-red {
-	background: #ff4800;
-}
-.bck-yellow {
-	background: yellow;
-	height: 100vh;
+.bck-footer {
+	background: #FB8C00;
 }
 
 .iconImage {
@@ -34,22 +19,16 @@ html {
 	margin-right: 10px;
 }
 
-.center-wrapper {
-	width: 900px;
-	margin: 0 auto;
-}
 
-/*====================
-        HEADER
-======================*/
+/*------ HEADER ------*/
 
 .header-logo-bg {
 	flex-grow: 1;
 }
 .header-logo {
-	margin-left: 40px;
-	background: rgba(0, 0, 0, 0.2);
+	margin-left: 0px;
 	padding: 10px;
+	/* transform: scale(0.8); */
 }
 
 .MuiSvgIcon-root {
@@ -66,17 +45,12 @@ html {
   color: green;
 }
 
-
-/*====================
-        FOOTER
-======================*/
+/*------ FOOTER ------*/
 
 footer {
 	padding: 20px 0px;
 	text-align: center;
-	font-size: 30px;
 	color: #ffffff;
-	background: red;
 	font-weight: 300;
 }
 
@@ -85,9 +59,12 @@ footer {
 	margin-top: 0px !important;
 }
 
-/*====================
-CARROUSEL
-======================*/
+.footer-logo{
+	transform: scale(0.8);
+}
+
+
+/*------ CARROUSEL ------*/
 
 .carrousel-wrapper {
 	height: 100vh;
@@ -99,9 +76,8 @@ CARROUSEL
 	height: 100vh;
 }
 
-/*====================
-        COUNTDOWN
-======================*/
+
+/*------ COUNTDOWN ------*/
 
 .countdown-wrapper {
 	position: absolute;
@@ -112,12 +88,16 @@ CARROUSEL
 .countdown-wrapper .countdown-top {
 	background: rgb(255, 217, 0);
 	color: black;
-	font-size: 30px;
+	font-size: 1.4rem;
 	font-weight: 700;
-	padding: 10px 33px;
-	box-shadow: 3px 3px 4px black;
-	display: inline-block;
-	text-transform: uppercase;
+	padding: 5px 20px;
+	box-shadow: 2px 2px 3px black;
+}
+
+.countdown-subtitle{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 300;
 }
 
 .countdown-wrapper .countdown-bottom {

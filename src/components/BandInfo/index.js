@@ -1,28 +1,27 @@
-import BandInformation from './BandInformation';
+import Biography from './Biography';
 import MemberCard from './MemberCard';
-import BandImages from './BandImages';
+import BandData from './../Data/BandData';
 import { Container, Grid, Box } from '@material-ui/core';
 import { Zoom } from 'react-awesome-reveal';
 import bandLogo from "../../resources/images/logo.svg"
 
-const Information = () => {
+const BandInfo = () => {
 	return (
-		<div style={{backgroundColor: 'yellow'}}
+		<div style={{backgroundColor: '#ffc105'}}
      id="band-info">
 			<Container style={{
-        background: `linear-gradient(rgba(255,255,0,0.93), rgba(255,255,0,0.93)),
+        background: `linear-gradient(rgba(255, 193, 7, 0.95), rgba(255, 193, 7,0.95)),
         url(${bandLogo}) center`,
-        // zIndex: -10
      }}>
-				<BandInformation />
+				<Biography />
         <Box >
 
 				<Grid container spacing={0} >
-					{BandImages.band.map(member => {
+					{BandData.band.map(member => {
 						return (
-							<Grid item xs={12} sm={6} md={4} >
+							<Grid item xs={12} sm={6} md={4} key={member.name}>
 								<Zoom cascade>
-									<MemberCard member={member} key={member.name} />
+									<MemberCard member={member}  />
 								</Zoom>
 							</Grid>
 						);
@@ -34,4 +33,4 @@ const Information = () => {
 	);
 };
 
-export default Information;
+export default BandInfo;

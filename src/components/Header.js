@@ -13,7 +13,7 @@ const Header = () => {
 
 	const handleScroll = () => {
 		if (window.scrollY > 0) {
-			setShowHeader(false);
+			setShowHeader(true);
 		} else {
 			setShowHeader(false);
 		}
@@ -24,12 +24,13 @@ const Header = () => {
 	}, []);
 
 	return (
+		<>
 		<AppBar
 			position="fixed"
 			style={{
-				backgroundColor: showHeader ? 'rgba(0,0,0, 0.5)' : 'transparent',
+				backgroundColor: showHeader ? 'rgba(255,255,255, 0.3)' : 'transparent',
 				boxShadow: 'none',
-				padding: '20px'
+				padding: '0px'
 			}}
 		>
 			<Toolbar>
@@ -45,6 +46,7 @@ const Header = () => {
 				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)} />
 			</Toolbar>
 		</AppBar>
+		</>
 	);
 };
 

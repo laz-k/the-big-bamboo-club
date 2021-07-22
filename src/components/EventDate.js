@@ -47,7 +47,7 @@ const EventDate = () => {
 	return (
 		<Fade delay={1000}>
 			<div className="countdown-wrapper">
-				<div className="countdown-top">Live in Europe</div>
+				<div className="countdown-top"><span className="countdown-subtitle">Presenting</span>TOKYO SKA PARADISE ORCHESTRA</div>
 				<div className="countdown-bottom">
 					{renderDateItems(time.days < 10 ? `0${time.days}` : time.days, 'Days')}
 					{renderDateItems(time.hours < 10 ? `0${time.hours}` : time.hours, 'Hrs')}

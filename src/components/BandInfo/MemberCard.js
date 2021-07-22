@@ -13,7 +13,14 @@ const useStyles = makeStyles({
 	},
 	media: {
 		height: "450px",
+    borderBottom: "1px solid white"
 	},
+	content: {
+    backgroundColor: "#000000"
+  },
+	text:{
+		color: "white"
+	}
 });
 
 const MemberCard = ({ member }) => {
@@ -22,8 +29,8 @@ const MemberCard = ({ member }) => {
 	return (
 		<Card className={classes.root} elevation={2}>
 			<CardMedia className={classes.media} image={member.image} title={member.name}></CardMedia>
-			<CardContent>
-				<Typography gutterBottom variant="body1" component="p">
+			<CardContent className={classes.content}>
+				<Typography gutterBottom variant="body1" component="p" className={classes.text} >
 					{member.name}
 				</Typography>
 			</CardContent>
