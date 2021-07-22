@@ -1,5 +1,4 @@
 import "./resources/styles.css"
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carrousel from "./components/Carrousel";
@@ -8,8 +7,9 @@ import BandInfo from "./components/BandInfo";
 import TourDates from "./components/TourDates";
 import Contact from "./components/Contact";
 
+
 const App = () => {
-	return (<div className="App">
+	return (<>
     <Header/>
     <Carrousel />
     <EventDate />
@@ -17,7 +17,7 @@ const App = () => {
     <TourDates/>
     <Contact/>
     <Footer/>
-  </div>
+  </>
   );
 };
 

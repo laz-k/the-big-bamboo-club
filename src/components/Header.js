@@ -24,13 +24,12 @@ const Header = () => {
 	}, []);
 
 	return (
-		<>
 		<AppBar
 			position="fixed"
 			style={{
 				backgroundColor: showHeader ? 'rgba(255,255,255, 0.3)' : 'transparent',
 				boxShadow: 'none',
-				padding: '0px'
+				padding: '20px'
 			}}
 		>
 			<Toolbar>
@@ -46,7 +45,6 @@ const Header = () => {
 				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)} />
 			</Toolbar>
 		</AppBar>
-		</>
 	);
 };
 

@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     borderBottom: "2px solid black"
   },
   content: {
-    backgroundColor: "#e7e7e7"
+    backgroundColor: "#EEEEEE"
   }
 });
 

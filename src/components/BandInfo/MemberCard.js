@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     backgroundColor: "#000000"
   },
 	text:{
-		color: "white"
+		color: "white",
+		textAlign: "center"
 	}
 });
 
@@ -30,8 +31,11 @@ const MemberCard = ({ member }) => {
 		<Card className={classes.root} elevation={2}>
 			<CardMedia className={classes.media} image={member.image} title={member.name}></CardMedia>
 			<CardContent className={classes.content}>
+				<Typography gutterBottom variant="h6" component="p" className={classes.text} >
+					{member.name} 
+				</Typography>
 				<Typography gutterBottom variant="body1" component="p" className={classes.text} >
-					{member.name}
+					{member.instrument}
 				</Typography>
 			</CardContent>
 		</Card>

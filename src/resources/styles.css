@@ -6,9 +6,9 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
-.app {
+/* .app {
 	height: '1500px';
-}
+} */
 
 .bck-footer {
 	background: #FB8C00;
@@ -28,7 +28,7 @@ html {
 .header-logo {
 	margin-left: 0px;
 	padding: 10px;
-	/* transform: scale(0.8); */
+	transform: scale(0.8);
 }
 
 .MuiSvgIcon-root {
@@ -44,6 +44,18 @@ html {
   transform: scale(1.1);
   color: green;
 }
+
+/* @media screen and (max-width: 425px) {
+	.header-logo {
+		margin-left: -60px;
+		transform: scale(0.6);
+	}
+
+	.header-logo-bg {
+		flex-grow: 1;
+	}
+
+} */
 
 /*------ FOOTER ------*/
 
@@ -68,6 +80,7 @@ footer {
 
 .carrousel-wrapper {
 	height: 100vh;
+	width: 100vw;
 	overflow: hidden;
 }
 
@@ -78,6 +91,18 @@ footer {
 
 
 /*------ COUNTDOWN ------*/
+@media screen and (max-width: 425px){
+
+	.countdown-wrapper .countdown-top {
+		font-size: 1rem !important;
+	}
+
+	.countdown-wrapper .countdown-time {
+		font-size: 20px !important;
+		border-right: 2px solid #f44336;
+		padding: 5px;
+	}
+}
 
 .countdown-wrapper {
 	position: absolute;
@@ -130,6 +155,11 @@ footer {
 	border-right: 2px solid #f44336;
 }
 
+/*------ CONTACT ------*/
+
+.MuiOutlinedInput-root{
+	background-color: #FAFAFA;
+}
 
 
 /*====================

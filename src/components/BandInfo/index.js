@@ -16,10 +16,10 @@ const BandInfo = () => {
 				<Biography />
         <Box >
 
-				<Grid container spacing={0} >
+				<Grid container spacing={2} >
 					{BandData.band.map(member => {
 						return (
-							<Grid item xs={12} sm={6} md={4} key={member.name}>
+							<Grid item xs={12} sm={4} md={4} key={member.name}>
 								<Zoom cascade>
 									<MemberCard member={member}  />
 								</Zoom>

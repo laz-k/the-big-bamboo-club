@@ -12,39 +12,49 @@ const BandImages = {
 	band: [
 		{
 			image: img1,
-			name: 'Atsushi Yanaka - Baritone Sax',
+			name: 'Atsushi Yanaka',
+			instrument: "- Baritone Sax -"
 		},
 		{
 			image: img2,
-			name: 'Masahiko Kitahara - Trombone',
+			name: 'Masahiko Kitahara',
+			instrument: "- Trombone -"
 		},
 		{
 			image: img3,
-			name: 'Gamo - Tenor Sax',
+			name: 'Gamo',
+			instrument: '- Tenor Sax -'
 		},
 		{
 			image: img4,
-			name: 'Nargo - Trumpet',
+			name: 'Nargo',
+			instrument: '- Trumpet -'
 		},
 		{
 			image: img5,
-			name: 'Takashi Kato - Guitar',
+			name: 'Takashi Kato',
+			instrument: '- Guitar -'
+		
 		},
 		{
 			image: img6,
-			name: 'Tsuyoshi Kawakami - Bass',
+			name: 'Tsuyoshi Kawakami',
+			instrument: '- Bass Guitar -'
 		},
 		{
 			image: img7,
-			name: 'Yuichi Oki - Keyboards',
+			name: 'Yuichi Oki',
+			instrument: '- Keyboards -'
 		},
 		{
 			image: img8,
-			name: 'Hajime Omori - Percussion',
+			name: 'Hajime Omori',
+			instrument: '- Percussion -'
 		},
 		{
 			image: img9,
-			name: 'Kin-ichi Motegi - Drums',
+			name: 'Kin-ichi Motegi',
+			instrument: '- Drums -'
 		},
 	],
 };
