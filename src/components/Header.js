@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import SideDrawer from './SideDrawer';
 
@@ -29,7 +29,7 @@ const Header = () => {
 			style={{
 				backgroundColor: showHeader ? 'rgba(255,255,255, 0.3)' : 'transparent',
 				boxShadow: 'none',
-				padding: '20px'
+				padding: '0px'
 			}}
 		>
 			<Toolbar>
@@ -42,7 +42,7 @@ const Header = () => {
 				<IconButton aria-label="Menu" color="inherit" onClick={() => toggleDrawer(true)}>
 					<MenuIcon />
 				</IconButton>
-				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)} />
+				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)} onClick={value => toggleDrawer(value)} />
 			</Toolbar>
 		</AppBar>
 	);
