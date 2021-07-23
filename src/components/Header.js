@@ -42,7 +42,7 @@ const Header = () => {
 				<IconButton aria-label="Menu" color="inherit" onClick={() => toggleDrawer(true)}>
 					<MenuIcon />
 				</IconButton>
-				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)} onClick={value => toggleDrawer(value)} />
+				<SideDrawer open={drawerOpen} onClose={value => toggleDrawer(value)}  />
 			</Toolbar>
 		</AppBar>
 	);

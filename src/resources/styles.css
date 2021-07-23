@@ -11,7 +11,7 @@ html {
 } */
 
 .bck-footer {
-	background: #FB8C00;
+	background: #FFC107;
 }
 
 .iconImage {
@@ -28,7 +28,6 @@ html {
 .header-logo {
 	margin-left: 0px;
 	padding: 10px;
-	transform: scale(0.8);
 }
 
 .MuiSvgIcon-root {
@@ -62,7 +61,7 @@ html {
 footer {
 	padding: 20px 0px;
 	text-align: center;
-	color: #ffffff;
+	color: #616161;
 	font-weight: 300;
 }
 
@@ -80,7 +79,6 @@ footer {
 
 .carrousel-wrapper {
 	height: 100vh;
-	width: 100vw;
 	overflow: hidden;
 }
 

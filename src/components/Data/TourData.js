@@ -10,7 +10,7 @@ const TourData = {
 		{
 			city: 'Milan - Italy',
 			date: 'Sunday, 12 November @ Rosa Nero',
-			address1: 'Via San Cosmo Fuori Porta Nolana 141, ',
+			address1: 'Via Fuori Porta Nolana 141, ',
 			address2: 'Milano, 20122',
 			tel: 'Tel.: 0315 0193480',
 		},

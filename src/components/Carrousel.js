@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-
+import { Container } from '@material-ui/core';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -11,6 +11,7 @@ import slide4 from './../resources/images/slide-4.jpeg';
 const Carrousel = () => {
 	const settings = {
 		dots: false,
+		arrows: false,
     fade: true,
 		infinite: true,
 		autoplay: true,
@@ -21,7 +22,7 @@ const Carrousel = () => {
   
   
 	return (
-    <div className="carrousel-wrapper">
+    <Container maxWidth="xl" disableGutters >
 			<Slider {...settings}>
 				<div>
 					<div
@@ -56,7 +57,7 @@ const Carrousel = () => {
 					></div>
 				</div>
 			</Slider>
-		</div>
+		</Container>
 	);
 };
 

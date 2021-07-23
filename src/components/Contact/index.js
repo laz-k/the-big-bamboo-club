@@ -5,7 +5,6 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles({
 	root: {
-		backgroundColor: '#FFC107',
 		paddingTop: '50px',
 		paddingBottom: '50px',
 	},

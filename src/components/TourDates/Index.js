@@ -15,13 +15,13 @@ const TourDates = () => {
 	const classes = useStyles()
 
 	return (
-		<Container maxWidth="lg" id="tour-dates" className={classes.root} >
+		<Container id="tour-dates" className={classes.root} >
 			<Typography variant="h2">
 				<Box pt={5} textAlign="center" fontWeight={700}>
 					Tour Dates
 				</Box>
 			</Typography>
-			<Grid container spacing={0}>
+			<Grid container spacing={2}>
 				{TourData.location.map((place, index) => {
 					return (
 						<Grid item xs={12} sm={6} md={4} key={index}>

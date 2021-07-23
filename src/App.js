@@ -6,7 +6,7 @@ import EventDate from "./components/EventDate";
 import BandInfo from "./components/BandInfo";
 import TourDates from "./components/TourDates";
 import Contact from "./components/Contact";
-
+import Tickets from "./components/Tickets";
 
 const App = () => {
 	return (<>
@@ -15,6 +15,7 @@ const App = () => {
     <EventDate />
     <BandInfo />
     <TourDates/>
+    <Tickets/>
     <Contact/>
     <Footer/>
   </>
