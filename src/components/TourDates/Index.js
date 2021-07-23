@@ -2,7 +2,7 @@ import MediaCard from './MediaCard';
 import Grid from '@material-ui/core/Grid';
 import { Container, Typography, Box, makeStyles } from '@material-ui/core';
 import { Zoom } from 'react-awesome-reveal';
-import TourData from './../Data/TourData';
+import TourData from '../Data/TourData';
 
 const useStyles = makeStyles({
 	root:{
